@@ -1,3 +1,6 @@
+#experience {
+  margin-top: 5rem;
+}
 .experience_container {
     display: flex;
     align-items: center;
@@ -11,7 +14,7 @@
     padding: 2.4rem 6rem;
     border-radius: 2rem;
     border: 1px solid transparent;
-    max-width: 70%;
+    max-width: 80%;
     
 }
 .experience_container >div:hover {
@@ -46,27 +49,27 @@
 
 @media screen and (max-width: 1024px) {
   .experience_container{
-    grid-template-columns: 1fr;
-    
+    grid-template-columns: 1fr ;
   }
-  .experience_container >div{
-    width: 80%;
-    padding: 2rem;
+  .experience_container > div{
+    padding: 0;
     margin: 0 auto;
-
-  }
-  .experience_content{
-    padding: 1rem;
-  }
-}
-
-@media screen and(max-width:600px){
-   .experience_container{
-    gap: 1rem;
    
-   }
-   .experience_container >div {
-    width: 100%;
-    padding: 2rem 1rem;
-   }
+  }
+  .experience_content {  
+    gap: 2rem;
+    padding: 10px;
+  }
 }
+
+@media screen and (max-width:600px){
+
+  .experience_content{
+    grid-template-columns: 1fr;
+    padding: 0 40px 0 ;
+    gap: 1px;
+    width: 50%;
+  }
+  
+  }
+

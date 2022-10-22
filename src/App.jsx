@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     
-    <Particle /> 
+    <Particle />  
     <Header />
     <Nav />
     <About />

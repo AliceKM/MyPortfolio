@@ -82,14 +82,15 @@
     margin: 1rem 0 1.5rem;
  }
 
-@media screen and(max-width:600px){
+@media screen and (max-width:600px){
     .about_me {
         width: 63%;
         margin: 0 auto 3rem;
     }
     .about_card{
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        gap: 1px;
+        padding: 1rem 1rem;
     }
     .about_content {
         text-align: center;

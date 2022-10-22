@@ -33,3 +33,11 @@ nav a.active{
     background: var(--color-primary);
     color:var(--color-white);
 }
+
+@media screen and (max-width:600px){
+    nav{
+    left: 50%;
+    bottom: 5%;
+   
+    }
+}

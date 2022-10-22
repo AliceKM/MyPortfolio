@@ -17,31 +17,28 @@ function Experience() {
         <div className='experience_content'>
           <article className='experience_details'>
         <img src={Html} alt="" className='experience_details-icon' />
-        <div>
+      
         <h4>HTML</h4> 
         <small className='text-light'>Experienced</small>
-        </div>
         
           </article>
           <article className='experience_details'>
           <img src={Css} alt="" className='experience_details-icon' />
-        <div>
         <h4>CSS</h4> 
-        <small className='text-light'>Experienced</small></div>
+        <small className='text-light'>Experienced</small>
           </article>
           <article className='experience_details'>
           <img src={Javascript} alt="" className='experience_details-icon' />
 
-        <div>
         <h4>JavaScript</h4> 
-        <small className='text-light'>Intermediate</small></div>
+        <small className='text-light'>Intermediate</small>
           </article>
           <article className='experience_details'>
           <img src={Reactlog} alt="" className='experience_details-icon' />
 
-        <div>
+      
         <h4>React</h4> 
-        <small className='text-light'>Intermediate</small></div>
+        <small className='text-light'>Intermediate</small>
           </article>
           
         
