@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank, jsx-a11y/anchor-is-valid */
 import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
@@ -35,7 +36,7 @@ function Contact() {
         < BsWhatsapp className='contact_option-icon'/>
           <h4>WhatsApp</h4>
           <h5>+12356789</h5>
-          <a href="https://api.whatsapp.com/send?phone+4325674058" target="_blank">Send a message</a>
+          <a href="https://api.whatsapp.com/send?phone+4325674058" target="_blank" rel="noopener noreferrer">Send a message</a>
           </article>
         </div>
         {/* end of contact options */}

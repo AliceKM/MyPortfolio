@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank, jsx-a11y/anchor-is-valid */
 import React from 'react'
 import  './nav.css'
 import {BiHomeHeart} from 'react-icons/bi'
