@@ -10,8 +10,6 @@ header{
     position: relative;
    
 }
-
-
 .cta{
     margin-top:2.5rem ;
     display: flex;
@@ -27,14 +25,11 @@ header{
     position: absolute;
     left: 0;
     bottom: 3rem;
-    
-    
 }
 .header_socials::after{
     content: "";
     width: 1px;
     height: 2rem;
-    background:  #4db5ff;
 }
 
   .me{
@@ -49,7 +44,6 @@ header{
     padding: 5rem 1.5rem 1.5rem ;
 } 
 .me-photo{
-   
     width: 35rem;
     height: 45rem;
     position: absolute;
@@ -59,7 +53,6 @@ header{
     border-radius: 17rem 17rem 0 0  ; 
     overflow: hidden;
     padding: 2rem 1.5rem 1.5rem ;
-   
 }
 .scroll_down{
     position: absolute;

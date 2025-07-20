@@ -1,75 +1,171 @@
-#experience {
+/* experience.css */
+:root {
+  --color-bg: #1a1a32;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #ffffff;
+  --color-light: rgba(255, 255, 255, 0.8);
+}
+
+.experience-section {
   margin-top: 5rem;
+  padding: 2rem 1rem;
 }
-.experience_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h5 {
+  color: var(--color-light);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.section-header h2 {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(91, 192, 255, 0.3);
+}
+
+.header-decoration {
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.skill-card {
+  background: var(--color-bg-variant);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.skill-card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
+
+.card-header {
+  margin-bottom: 1rem;
+}
+
+.card-header h3 {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--color-primary-variant);
+  padding-bottom: 0.5rem;
+}
+
+.skill-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+  min-width: 32px;
+  color: var(--color-primary);
+}
+
+.skill-text h4 {
+  color: var(--color-white);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.skill-text h4[title="ES6+"]::after {
+  content: "ES6+";
+  font-size: 1rem;
+  color: var(--color-light);
+  margin-left: 0.3rem;
+}
+
+.skill-text h4[title="SASS"]::after {
+  content: "SASS";
+  font-size: 1rem;
+  color: var(--color-light);
+  margin-left: 0.3rem;
+}
+
+.zustand-icon {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
   
-    
-    
-}
-.experience_container >div{
-    background: var(--color-bg-variant);
-    padding: 2.4rem 6rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    max-width: 80%;
-    
-}
-.experience_container >div:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
-.experience_container >div h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-primary);
-}
-
-.experience_content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap:  2rem;
-}
-.experience_details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-
-}
-.experience_details-icon {
-    margin-top: 6px;
-    color: var(--color-primary);
-    max-width: 25%;
-}
-
-@media screen and (max-width: 1024px) {
-  .experience_container{
-    grid-template-columns: 1fr ;
-  }
-  .experience_container > div{
-    padding: 0;
-    margin: 0 auto;
-   
-  }
-  .experience_content {  
-    gap: 2rem;
-    padding: 10px;
+  .skill-card {
+    padding: 1.2rem;
   }
 }
 
-@media screen and (max-width:600px){
-
-  .experience_content{
+@media (max-width: 600px) {
+  .experience-grid {
     grid-template-columns: 1fr;
-    padding: 0 40px 0 ;
-    gap: 1px;
-    width: 50%;
+    gap: 1.2rem;
   }
   
+  .skill-items {
+    grid-template-columns: 1fr 1fr;
   }
+}
 
+@media (max-width: 480px) {
+  .experience-section {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .skill-items {
+    grid-template-columns: 1fr;
+  }
+  
+  .skill-item {
+    gap: 0.8rem;
+  }
+}

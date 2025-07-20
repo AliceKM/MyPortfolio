@@ -10,7 +10,6 @@ function Contact() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_wirb06v', 'template_v7ogoz7', form.current, '_OYaS-mCJzXdEOpqt')
      e.target.reset() 
   };
@@ -19,15 +18,13 @@ function Contact() {
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <div className='container contact_container'>
-        <div className='contact_options'>
-         
+        <div className='contact_options'> 
           <article className='contact_option'>
         <  MdOutlineEmail className='contact_option-icon '/>
           <h4>Email</h4>
-          <h5>AliceWang.km@gmail.com</h5>
+          <h6>AliceWang.km@gmail.com</h6>
           <a href="mailto: AliceWang.km@gmail.com" target="_blank">Send a message</a>
-          </article>
-          
+          </article>   
           <article className='contact_option'>
         <  RiMessengerLine className='contact_option-icon' />
           <h4>Messages</h4>
@@ -48,10 +45,8 @@ function Contact() {
           <textarea name="message" rows='7' placeholder='Your Message'></textarea>
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
-      </div>
-     
+      </div> 
     </section>
   )
 }
-
 export default Contact

@@ -2,6 +2,9 @@
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
+    gap: 1 rem;
+    word-border: break-all;
+    justify-content: center;
 }
 .contact_options {
     display: flex;
@@ -10,10 +13,12 @@
 }
 .contact_option {
     background: var(--color-bg-variant);
-    padding: 1.2rem;
+    padding: 2rem;
     border-radius: 1.2rem;
     text-align: center;
+    justify-content: center;
     border: 1px solid transparent;
+    word-border: break-all;
     transition: var(--transition);
 }
 .contact_option:hover {
